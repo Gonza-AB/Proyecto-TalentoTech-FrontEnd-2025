@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="fondo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="StylesTarjetas.css">
+    <link rel="stylesheet" href="StylesCarrito.css">
+    <link rel="stylesheet" href="StylesCelular.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fuentes de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!--Iconos de Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Camisetas Gonza</title>
+</head>
+
+<body>
+    <header id="inicio">
+        <div id="logo">
+            <img src="imagenes/Camisetas_gonza.png" alt="Logo de la tienda">
+        </div>
+        <nav class="opciones-menu">
+            <ul id="linea-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Nosotros</h1>
+    <div class="nosotros-container">
+        <!-- Video de introducción -->
+        <video id="nosotros" class="video-introduccion" src="videos/nueva-camiseta-argentina.mp4" autoplay muted
+            playsinline loop>
+        </video>
+
+        <!-- Descripción -->
+        <section class="quienes-somos">
+            <div class="contenido">
+                <h2>¿Quiénes somos?</h2>
+                <p>Somos fanáticos del fútbol que buscamos transmitir la pasión a través de camisetas únicas y
+                    originales.</p>
+                <img class="descripciónFoto" src="imagenes/fondo4.jpg" alt="Quienes somos?" width="300px">
+            </div>
+            <div class="contenido">
+                <h2>¿Por qué elegirnos?</h2>
+                <p>Garantía de autenticidad, entregas rápidas y atención al cliente personalizada. ¡Viví el fútbol
+                    como nunca!</p>
+                <img class="descripciónFoto" src="imagenes/fondo5.jpg" alt="Porque elegirnos?" width="300px">
+            </div>
+        </section>
+        </h3>
+    </div>
+
+    <main>
+        <h1>Productos</h1>
+        <section>
+            <!--Productos-->
+            <section class="secciones" id="productos">
+                <div class="productos"></div>
+            </section>
+            <div class="carritoCompras"></div>
+        </section>
+        <!--Ubicacion-->
+        <h1>Visitanos</h1>
+        <div class="visitanos-container">
+            <section class="formas-de-pago">
+                <h2>¿Dónde estamos?</h2>
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52550.95446306013!2d-58.42628326971821!3d-34.59316894626064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b6925e5473%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20J.%20Armando!5e0!3m2!1ses-419!2sar!4v1748107365880!5m2!1ses-419!2sar"
+                        width="600" height="350" allowfullscreen="yes" loading="eager"
+                        referrerp5licy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <!--Formas de pago-->
+            <section class="formas-de-pago">
+                <h2>Medios de Pago</h2>
+                <div class="metodos-pago">
+                    <div class="metodo">
+                        <i class="fa-solid fa-money-bill-wave fa-2x"></i>
+                        <h3>Efectivo</h3>
+                        <p>Descuento del 10% abonando en mano o contra entrega</p>
+                    </div>
+                    <div class="metodo">
+                        <i class="fa-solid fa-university fa-2x"></i>
+                        <h3>Transferencia</h3>
+                        <p>CBU / Alias disponible para pagos bancarios</p>
+                    </div>
+                    <div class="metodo">
+                        <i class="fa-brands fa-cc-visa fa-2x"></i>
+                        <h3>Tarjetas y QR</h3>
+                        <p>Pagá con MercadoPago, tarjetas de crédito o débito</p>
+                    </div>
+                </div>
+            <p class="p2">💬 Si tenés dudas, escribinos por WhatsApp para coordinar el medio de
+                pago más cómodo para vos</p>
+            </section>
+        </div>
+        <!--Reseñas-->
+        <h1>Reseñas</h1>
+        <section class="fondoResenia">
+            <div class="resenias"></div>
+        </section>
+
+        <!--Formulario de contacto-->
+        <h1>Contacto</h1>
+        <section class="contacto">
+            <form class="form-contact" action="https://formspree.io/f/manogyee" method="POST">
+                <label>
+                    Ingresa tu Nombre:
+                </label>
+                <input type="text" placeholder="Tu nombre" name="nombre" required />
+                <label>
+                    Ingresa tu E-mail:
+                </label>
+                <input type="email" placeholder="Tu email" name="email" required />
+                <label>
+                    Ingresa tu mensaje:
+                </label>
+                <textarea placeholder="Tu mensaje..." required name="mensaje"></textarea>
+                <button type="submit">Enviar Datos</button>
+            </form>
+        </section>
+    </main>
+
+    <footer> <!--Pongo en el footer otra vez la barra de navegacion para que puedan elegir desde ahi-->
+        <h1>Mas info</h1>
+        <!--Envios y mas info-->
+        <section class="info-envios">
+            <div class="item">
+                <i class="fa-solid fa-truck-fast fa-2x"></i>
+                <h3>Envíos a todo el país</h3>
+                <p>Rápidos, seguros y con seguimiento</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-location-dot fa-2x"></i>
+                <h3>Ubicación</h3>
+                <p>Capital Federal, Buenos Aires. Retiro disponible</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-headset fa-2x"></i>
+                <h3>Soporte</h3>
+                <p>Atención personalizada por WhatsApp</p>
+            </div>
+        </section>
+        <nav>
+            <ul class="iniciov2">
+                <li><a class="menu_li" href="#inicio">Inicio</a></li>
+                <li><a class="menu_li" href="#nosotros">Nosotros</a></li>
+                <li><a class="menu_li" href="#productos">Productos</a></li>
+                <li><a class="menu_li" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="copy">
+
+            <!--Parte de contacto-->
+            <div class="footer">
+                <a id="contacto"></a></a>
+                <div class="footer-content">
+                    <div class="redes">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://https://web.whatsapp.com" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <a href="#inicio" class="volver-arriba">↑ Volver arriba</a>
+                <p>Todos los derechos reservados &copy; 2025 Curso Front End - JS</p>
+            </div>
+    </footer>
+
+    <!--Mensaje Toast-->
+    <div id="notificacion-carrito" class="toast oculto">
+        Producto agregado al carrito 🛒
+    </div>
+    <!--Distintos scritps-->
+    <script src="Scripts.js"></script>
+    <script src="ScriptsTarjetas.js"></script>
+    <script src="ScriptsCarrito.js"></script>
+    <script src="https://kit.fontawesome.com/tu-key.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
